@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Transparencia Digital</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Ajustes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Te falta disenar esto, sí, lo se, falta la enie.</string>
+</resources>

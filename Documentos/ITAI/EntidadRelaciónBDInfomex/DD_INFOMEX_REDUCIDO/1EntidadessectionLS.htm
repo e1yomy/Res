@@ -1,0 +1,4106 @@
+<HTML>
+<HEAD>
+<TITLE>
+INFOMEX - Diccionario de Datos
+</TITLE>
+</HEAD>
+
+<BODY>
+<TABLE CELLPADING=1 BORDER=0 WIDTH=900>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#9E9ECF>
+<B><FONT SIZE=2 FACE=Arial color="#FFFFFF">FORMATOS:</FONT></B>
+</TD>
+<TD VALIGN=TOP BGCOLOR=#9E9ECF>
+<B><FONT SIZE=2 FACE=Arial color="#FFFFFF"><A HREF=1EntidadessectionTabLkd.htm>TABULAR</A></FONT></B>
+</TD>
+<TD VALIGN=TOP BGCOLOR=#9E9ECF>
+<B><FONT SIZE=2 FACE=Arial color="#FFFFFF"><A HREF=1EntidadessectionLS.htm>JER&Aacute;RQUICO</A></FONT></B>
+</TD>
+</TR>
+</TABLE>
+</P>
+<TABLE CELLPADING=1 BORDER=0 WIDTH=900>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP>
+<FONT SIZE=2 COLOR=#800000 FACE='Times New Roman'></FONT></TD>
+</TR>
+</TABLE>
+<TABLE CELLPADING=1 BORDER=2 WIDTH=900>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#c6d5fb>
+<B><FONT SIZE=4 COLOR=#000000 FACE='Verdana'>Entidades</FONT></B></TD>
+</TR>
+</TABLE>
+<TABLE CELLPADING=2 BORDER=0 WIDTH=900>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Calendario</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Catálogo de calendarios utilizados en el sistema.
+Por ejemplo:
+- Calendario del gobierno estatal
+- Calendario del municipio
+- Calendario para recursos de revisión
+
+Esta entidad únicamente contiene el encabezado del calendario, es decir su nombre y descripción.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDCalendario</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del calendario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(100)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre asignado al calendario.
+Por ejemplo:
+- Calendario de sujeto obligado 1
+- Calendario de sujeto obligado 2
+- etc.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripcion</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripción del calendario registrado.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>CalendarioDia</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>En esta entidad se registra la configuración del calendario, ya sean aquellos no laborales, horarios en específico de algunos días.
+
+Para un calendario en específico (de acuerdo a la tabla calendario) se tienen todos los días registrados como no laborales, días feriados, horarios de los días laborales.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDCalendarioDia</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>identificador único asignado automáticamente.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDCalendario</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del calendario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDCalendarioTipoFecha</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del tipo de fecha.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDCalendarioTipoDia</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identifiador único del tipo de día.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha en específico a la que se hace referencia. Este campo es utilizado cuando se selecciona un día en específico como no laboral.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Dia</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>int</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Este campo se utiliza cuando la configuración aplica para un día en específico de la semana.
+</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>TiempoInicial1</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(5)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Campo utilizado para establecer horarios de trabajo.
+Hora de inicio.
+Existen 5 campos de TiempoInicial, que sirven para establecer varios rangos de horario para un mismo día.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>TiempoFinal1</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(5)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Campo utilizado para establecer horarios de trabajo.
+Hora de término.
+Existen 5 campos de TiempoInicial, que sirven para establecer varios rangos de horario para un mismo día.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>TiempoInicial2</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(5)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Campo utilizado para establecer horarios de trabajo.
+Hora de inicio.
+Existen 5 campos de TiempoInicial, que sirven para establecer varios rangos de horario para un mismo día.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>TiempoFinal2</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(5)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Campo utilizado para establecer horarios de trabajo.
+Hora de término.
+Existen 5 campos de TiempoInicial, que sirven para establecer varios rangos de horario para un mismo día.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>TiempoInicial3</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(5)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Campo utilizado para establecer horarios de trabajo.
+Hora de inicio.
+Existen 5 campos de TiempoInicial, que sirven para establecer varios rangos de horario para un mismo día.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>TiempoFinal3</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(5)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Campo utilizado para establecer horarios de trabajo.
+Hora de término.
+Existen 5 campos de TiempoInicial, que sirven para establecer varios rangos de horario para un mismo día.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>TiempoInicial4</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(5)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Campo utilizado para establecer horarios de trabajo.
+Hora de inicio.
+Existen 5 campos de TiempoInicial, que sirven para establecer varios rangos de horario para un mismo día.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>TiempoFinal4</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(5)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Campo utilizado para establecer horarios de trabajo.
+Hora de término.
+Existen 5 campos de TiempoInicial, que sirven para establecer varios rangos de horario para un mismo día.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>TiempoInicial5</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(5)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Campo utilizado para establecer horarios de trabajo.
+Hora de inicio.
+Existen 5 campos de TiempoInicial, que sirven para establecer varios rangos de horario para un mismo día.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>TiempoFinal5</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(5)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Campo utilizado para establecer horarios de trabajo.
+Hora de término.
+Existen 5 campos de TiempoInicial, que sirven para establecer varios rangos de horario para un mismo día.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>CalendarioTipoDia</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Catálogo de tipo de día:
+1 - Laboral
+2 - No Laboral
+
+Los valores encontrados en esta entidad son fijos, no deben ser modificados, ya que son utilizados para la funcionalidad de la herramienta.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDCalendarioTipoDia</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identifiador único del tipo de día.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(100)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre de del tipo de día.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>CalendarioTipoFecha</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Esta entidad tiene tres registos predefinidos:
+1 - Dia de la semana
+2 - Dia del año
+3 - Dia
+
+Son utilizados cuando configuramos un calendario. 
+- El primero indica que la configuración se aplica a un día de la semana en específico.
+- El Día del año, es utilizado para señalar días feriados, estos serán contemplados para todos los años.
+- Día, solamente aplica la configuración para un día en específico.
+</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDCalendarioTipoFecha</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del tipo de fecha.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(100)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del tipo de fehca.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>
+Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Departamento</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Esta entidad contiene información general(Nombre, descripción, responsable) de los  sujetos obligados.
+Esta es una entidad de uso recursivo, es decir, esta misma tabla nos permite conocer la estructura jerárquica de los sujetos obligados.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDDepartamento</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único de la dependencia o sujeto obligado.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDDepartamentoPadre</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador de del sujeto obligado padre, es decir aquel al que este pertenece.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDResponsable</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador del responsable del departamento. Este valor está refereciado al Campo GUIDUsuario de la tabla Usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre de la dependencia o sujeto obligado.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripcion</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripción del sujeto obligado. Este campo se utiliza para describir al sujeto obligado, o bien, escribir información que no es relevante al nombre.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Ruta</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(7000)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Ruta de referencia en cuanto a la relación de ujetos oblijados, por ejemplo:
+
+Gobierno del estado/Tesorería</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de la última actualización de lso datos del sujeto obligado.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDCalendario</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador del calendario que utiliza el sujeto obligado.
+Este hace referencia a la tabla Calendario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>EnvioInternacional</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Esta entidad contiene las cuotas de mensajería que ofrece SEPOMEX para envíos internacionales.
+Las cuotas están definidas por zonas, a las cuales pertenecen los países y por rangos de peso en gramos.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>LimiteInf</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>decimal(18,2)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Límite inferior en gramos.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>LimiteSup</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>decimal(18,2)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Límite superior en gramos.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Zona</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>char(1)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Indica la zona a la que corresponde el costo de envío. Las zonas son A, B, C.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Costo</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>decimal(18,2)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Costo en pesos del servicio de mensajería.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>EnvioLocal</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Esta entidad contiene las cuotas de mensajería que ofrece SEPOMEX para envíos nacionales.
+Las cuotas están definidas por rangos de peso en gramos.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>LimiteInf</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>decimal(18,2)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Límite inferior del peso en gramos.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>LimiteSup</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>decimal(18,2)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Límite inferior del peso en gramos.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Total</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>decimal(18,2)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Costo del servicio de mensajería.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Estado</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Catálogo de entidades federativas de México, este catálogo contiene las entidades contenidas en el catálogo de SEPOMEX.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDEstado</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único de la entidad federativa.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDPais</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del país.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre de la entidad federativa.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripcion</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripción asociada a la entidad federativa.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Abreviacion</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(10)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Abreviación utilizada para la entidad federativa.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Pais</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>En esta entidad se encuentra el catálogo de países.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDPais</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del país.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del país</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Zona</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>char(1)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Zona a la que pertenece el país, según la clasificación de SEPOMEX para mensajería.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Abreviacion</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(10)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Abreviación utilizada para el país.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Paso</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>En esta entidad se encuentra la información general de los pasos que sigue un proceso, cada uno de los pasos que se registra en esta tabla, corresponde a una de las figuras del diagrama de proceso construido en visio.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDPaso</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del paso.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDProceso</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único de proceso.
+Este identificador se asigna automáticamente por el sistema al momento iniciar un proceso.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDProcesoTipoPaso</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>identificador único del paso de un proceso.
+Este identificador corresponde a cada uan de las figuras del diagrama del proceso.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaInicio</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha en la que se inicio el paso, esta fecha se da automáticamente por el sistema.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaFin</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de fin del paso, es la fecha en que se finaliza el paso en el sistema.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDStatus</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del estatus.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaVerdeAmarillo</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha en la que se presentará el semáforo amarillo para este paso. Esta fecha se calcula conforme a los días configurados en el diagrama.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaAmarilloRojo</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha en la que se presentará el semáforo rojo para este paso. Esta fecha se calcula conforme a los días configurados en el diagrama.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaAlerta</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha en que se envía una alerta al usuario, siempre y cuando se tengan configuradas alertas en el sistema.
+la alerta se envía vía correo electrónico.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaCaducidad</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha en la que caduca el paso, esta fecha se calcula conforme a los días configurados en el diagrama.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDPASOANTERIOR</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador del paso anterior a este.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDResponsableAnterior</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador del usuario que finalizó el paso anterior.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaFinPasoAnterior</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>fecha en la que finalizó el paso anterior.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Proceso</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Esta entidad contiene la información general de un proceso iniciado en el sistema, es decir, para cada solicitud que se registra en el sistema, se almacena información general en esta tabla (usuario que la registró, fecha de registro, fechas de lso semáforos, fecha de caducidad del proceso, etc.).</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDProceso</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único de proceso.
+Este identificador se asigna automáticamente por el sistema al momento iniciar un proceso.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDProcesoTipo</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador del tipo de proceso al que corresponde.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Folio</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Folio del proceso. Este folio se asigna automáticamente por el sistema. Es la referencia que conoce el colicitante de sus solicitudes y recursos de revisión.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDUsuario</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaInicio</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha en que inicia/captura ela solicitud.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaFin</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha que tendrá como fin el proceso de la solicitud. Según los días configurados para el tipo de proceso.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaAmarillo</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha en que el proceso se presentará con un semáforo de color amarillo. Esto hace refeencia a una alerta.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaRojo</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha en la que el proceso se presenta como tiempo crítico para dar seguimiento. Se presenta en el sistema con un semáforo en rojo.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDStatus</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del estatus del proceso.
+- En proceso
+- Cancelado
+- Terminado</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDProcesoPadre</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Este campo hace referencia ala misma tabla Proceso con el campo GUIDProceso. Este se utiliza cuando un proceso se dispara a partir de otro.
+Ejemplo: Subprocesos.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>EstadoPaso</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Estado en el que se encuentra el paso actual del proceso.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaInicioConteo</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha en la que se inicia el conteo de plazos para el proceso iniciado.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDUsuarioPasoAnt</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador del usuario que participó en el paso anterior al paso actual del proceso.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDPasoAnt</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador del paso anterior al actual del proceso.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaPasoAnt</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha en la que se finalizó el paso anterior al actual.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDPasoPadre</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador del paso en que se disparó un subproceso.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>ProcesoValor</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>En esta entidad se almacenan todos los datos relacionados con un proceso/solicitud, es decir toda la información que se registra para un proceso durante su ciclo de vida, es almacenado en esta entidad.
+En esta entidad se encontrarán los valores para todos aquellos campos que se incluyeron en el diagrama de visio, o bien, que son utilizados por los wizards.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDProceso</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del proceso/solicitud.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDCampo</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único de campo.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Texto</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(7000)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Valor que se capturo para el campo.
+Por ejemplo: Nombre, Apellidos, Calle, etc..</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Imagen</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>image</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Este campo guarda información cuando se trata de un campo de tipo archivo.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>ImagenMIME</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Este campo tiene información para campos de tipo archivo. Almacena el tipo de archivo.
+</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Paso</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>int</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador del paso en qu se realizó el registro de información para este campo.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>IDElementoCatalogo</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Este campo se utiliza cuando se trata de un campo tipo catálogo.
+En este campo se guarda el identificador correspondiente a la tabla indicada por el catálogo.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>ElementoSeleccionado</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>int</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Este campo se utiliza cuando se trata de un campo tipo catálogo.
+Indica si se seleccionó o no un elemento del catálogo.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDUsuario</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador del usuario que modificó el valor del campo.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Rol</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Catálogo de roles o perfiles registrados en el sistema.
+Por ejemplo:
+- Administrador
+- Solicitante
+- Administrador de dependencia
+- etc.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDRol</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador únco del rol o perfil.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del rol o perfil.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripcion</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripción del rol o perfil.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Status</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Catálogo de estatus que toma el proceso.
+- En proceso
+- Cancelado
+- Finalizado</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDStatus</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del estatus.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del Estatus</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDSistema</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>&nbsp</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>TipoCorreo</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Catálogo de tipos de correo electrónico.
+Por ejemplo:
+- Trabajo
+- Personal
+- Avisos</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDTipoCorreo</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>identificador único del tipo de correo.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del tipo de correo electrónico.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripcion</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripción del tipo de correo electrónico.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>TipoTelefono</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Catálogo de tipos de teléfono.
+Por ejemplo:
+- oficina
+- Particular
+- Celular
+- recados</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDTipoTelefono</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>identificador único del tipo de teléfono.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del tipo de teléfono.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripcion</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripción del tipo de teléfono.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Abreviacion</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(10)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Abreviación con la que se conoce el tipo de teléfono.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Usuario</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Catálogo de usuarios registrados en el sistema.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDUsuario</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDIdioma</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador del idioma que utiliza el usuario. hace referencia a la tabla Idioma.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Login</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre de usuario con el que entra al sistema.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Password</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Contraseña encriptada del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Apellidos</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Apellidos del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Estilo</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Indca el nombre de la hoja de estilo que utilizará el sitio para este usuario, lo cual permite personalizar colores ytipos de letra.
+Si este dato no se tiene se toma el definido en general para el sitio.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>CambiarPassword</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>int</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Bandera que indica si el usuario debe o no cambiar su contraseña la próxima vez que inicie una sesión en el sitio.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Activo</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>int</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Bandera que indica si el usario tiene un estatus de activo o no en el sitio.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Bloqueado</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>int</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Bandera que indica si el usario está bloqueado para el sitio.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDCalendario</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador del calendario con el que trabaja el usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Persona</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>indica si es persona física o moral
+1 - Física
+Diferende de 1 Moral</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FNacimiento</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de nacimiento del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Sexo</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Sexo del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>RepLegal</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del representante legal.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Calle</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Calle del domicilio del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NExterior</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Número exterior del domicilio del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NInterior</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Número interior del domicilio del solicitante.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Colonia</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Colonia del domicilio del solicitante.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>CP</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Código postal del domicilio del solicitante.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Telefono</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>teléfono particular del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>ClaElector</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Clave de la credencial de elector del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Curp</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Clave única de registro de población.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>RFC</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>registro federal de contribuyentes.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Ocupacion</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Ocupación actual del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nacionalidad</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nacionalidad del usuario
+1- Mexicana
+Diferente de 1 Extranjera</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>CedMigratoria</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(255)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Número de cédula migratoria.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Correo</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Dirección de correo electrónico.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>LugarCaptura</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Lugar en que se reaiza el registro del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDPais</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador del país al que corresponde el domicilio del usuario.
+hace referencia a la tabla Pais.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDEstado</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador del estado al que corresponde el domicilio del usuario.
+Hace referencia a la tabla Estado.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDCiudad</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador de la colonia correspondiente al domicilio del usuario.
+Hace referencia a la tabla Ciudad.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>APaterno</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(130)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Apellido paterno del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>AMaterno</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(125)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Apellido materno del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioDepartamento</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Relación de usuarios y departamentos, es decir, en esta tabla se tiene la relación de los usuarios que pertenecen a un departamento.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDDepartamento</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único de la dependencia o sujeto obligado.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDUsuario</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioRol</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Relación de usuarios y roles, es decir, en esta tabla se tiene la relación de los usuarios que pertenecen a un rol, así como los roles que tiene asignados un usuario.
+
+Un usuario puede tener más de un rol asignado.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDRol</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador únco del rol o perfil.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDUsuario</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioTipoCorreo</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>En esta entidad se puede tener una lista de direcciones de correo electrónico de un usuario en particular, clasificados por el tipo de correo.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDUsuario</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDTipoCorreo</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>identificador único del tipo de correo.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>DireccionCorreo</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Dirección de correo electrónico.
+Por ejemplo:
+atención@ifai.org.mx</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Publico</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>int</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Indica si el esta dirección de correo es pública o no. Esto para evitar que la dirección de correo se muestre para otros usuarios.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioTipoTelefono</FONT></B></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Números telefónicos que tiene el usuatio para contactarlo.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP BGCOLOR=#FFFFFF WIDTH=114>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>PK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FK</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Tipo de dato </FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Acepta Nulos</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#e2e8fe WIDTH=114>
+<B><FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Descripci&oacute;n</FONT></B>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDUsuario</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Identificador único del usuario.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>GUIDTipoTelefono</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Yes</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>identificador único del tipo de teléfono.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Lada</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(10)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Número de lada correspondiente.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Numero</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(20)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Número telefónico.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Publico</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>int</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NOT NULL</FONT>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Indica si el teléfono es público, esta bandera es utilizada para mostrar o no los datos a otros usuarios.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>FechaUltimaModif</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>datetime</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Fecha de última modificación del registro.</FONT>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=CENTER BGCOLOR=#FFFFFF>
+<B><FONT SIZE=2 FACE=Arial>&nbsp</FONT></B>
+</TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>UsuarioNT</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>No</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>varchar(50)</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>NULL</FONT></TD>
+<TD ALIGN=LEFT VALIGN=TOP BGCOLOR=#ffffff>
+<FONT SIZE=2 COLOR=#000000 FACE='Verdana'>Nombre del usuario de windows, en caso de contar con este tipo de autenticación.</FONT>
+</TD>
+</TR>
+</TABLE>
+<P></P><TABLE CELLPADING=1 BORDER=0 WIDTH=900>
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP>
+<FONT SIZE=2 COLOR=#800000 FACE='Verdana'></FONT></TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

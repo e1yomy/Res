@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<title>Pantalla</title>
+	<!--<script>setTimeout('document.location.reload()',1000); </script> -->
+	<link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+<!-- jQuery library 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+-->
+<!-- Latest compiled JavaScript
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"> 
+ -->
+
+</head>
+<body>
+    <div class="encabezado banner container-fuid">
+    </div>
+    <div class="row">
+    <div class="logo col-sm-3 ">
+        <div class="col-sm-12 well">
+            <img class="img-responsive container" src="logo.png" alt="Instituto de Transparencia y Acceso a la Información Pública del Estado de B.C.S">
+        </div>
+        <table class="menu table table-hover">
+		    <thead>
+		      <tr><th>Menú</th></tr>
+		    </thead>
+        </table>
+        <div class="list-group">
+            <a href="#" class = "list-group-item">Listado de solicitudes de acceso<span class="badge">5</span></a>
+            <a href="#" class = "list-group-item">Solicitudes atendidas<span class="badge">5</span></a>
+            <a href="#" class = "list-group-item">Solicitudes atendiendose<span class="badge">5</span></a>
+            <a href="#" class = "list-group-item">Solicitudes pendientes</a>
+            <a href="#" class = "list-group-item">Listado de sujetos obligados<span class="badge">5</span></a>
+            <a href="#" class = "list-group-item">Listado de recursos de revisión<span class="badge">5</span></a>
+            <a href="#" class = "list-group-item">Recursos de revisión atendidos<span class="badge">5</span></a>
+            <a href="#" class = "list-group-item">Recursos de revisión atendiendose<span class="badge">5</span></a>
+            <a href="#" class = "list-group-item">Recursos de revisión pendientes<span class="badge">5</span></a>
+            <a href="#" class = "list-group-item">Listado de denuncias por incumplimiento de obligaciones<span class="badge">5</span></a>
+            <a href="#" class = "list-group-item">Denuncias por incumplimiento atendiendose<span class="badge">5</span></a>
+            <a href="#" class = "list-group-item">Denuncias por incumplimiento atendidas<span class="badge">5</span></a>
+            <a href="#" class = "list-group-item">Denuncias por incumplimiento pendientes<span class="badge">5</span></a>
+        </div>
+        
+    
+    </div>
+    <div class="col-sm-9">
+            <div class="titulo espacio well">
+                <h4 class="titulo">Instituto de Transparencia y Acceso a la Información Pública del Estado de B.C.S.</h4>
+                <h6>Listado de solicitudes de acceso a información</h6>
+            </div>
+            <div class="row">
+                <div class="solicitudes col-sm-12">
+                 <nav class="navbar navbar-default container-fluid">
+                        <div class="navbar-header">
+                          <a class="navbar-brand" href="">Solicitud de información</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Solicitante</a></li>
+                            <li><a href="solicitud2.html">Notificaciones</a></li>
+                            <li><a href="solicitud3.html">Sujeto obligado</a></li>
+                            <li><a href="solicitud4.html">Descripción</a></li>
+                            <li><a href="solicitud5.html">Modalidad de entrega</a></li>
+                        </ul>
+                    </nav>
+                    <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">0%</div></div>
+                    <div class="cuadrodedatos col-sm-7">
+                        <form>
+                            <div class="form-grup row">
+                                <label>Nombre Completo Persona Física (Opcional)</label>
+                                <br>
+                                <input type="text" class="form-control" placeholder="Apellido Paterno" >
+                                <input type="text" class="form-control" placeholder="Apellido Materno">
+                                <input type="text" class="form-control" placeholder="Nombre (s)">
+                            </div>
+                            <br>
+                            
+                            <div class="form-group row">
+                                <label>Nombre del Representante <input type="checkbox" value=""></label>
+                                <br>
+                                <input type="text" class="form-control" placeholder="Apellido Paterno">
+                                <input type="text" class="form-control" placeholder="Apellido Materno">
+                                <input type="text" class="form-control" placeholder="Nombre (s)">
+                            </div>
+                            <br>
+                            
+                            <div class="form-group row">
+                                    <label>Nombre, denominación o razón social (en caso de ser persona moral)</label>
+                                <br>
+                                <input type="text" class="form-control" placeholder="Denominación o razón social" >
+                                <input type="text" class="form-control form-inline" placeholder="Nombre (s) de el (de los) representante (s) para oir y recibir notificaciones y documentos (adjuntar documento que acredite su representación)">
+                                    <input type="file" >
+                                    <label>Seleccionar el medio por el cuál acredita la representación
+                                        <label class="radio-inline"><input type="radio">Poder notarial</label>
+                                        <label class="radio-inline"><input type="radio">Carta poder</label>
+                                        <label class="radio-inline"><input type="radio">Otro documento <input type="te
+                                            "></label>
+                                    </label>
+                                </div>
+                        </form>
+                        
+                    </div>
+                    <div class="col-sm-5">
+                    <ol class="instructivo">
+                        <li>El nombre del solicitante deberá señalarse de manera opcional, si no es su deseo señalarlo, podrá utilizar un seudónimo. </li>
+                        <li>Dentro del plazo de quince días hábiles, contados a partir de la fecha de presentación de la solicitud de acceso a la información, el solicitante podrá:
+                        <ul>
+                            <li>Recibir información</li>
+                            <li>Recibir la notificación de que la entidad pública, necesita ampliar el plazo por cinco días hábiles más para dar respuesta a su solicitud</li>
+                            </ul>
+                        </li>
+                        <li>Dentro de los tres días hábiles posteriores a la presentación de la solicitud de acceso a la información, el sujeto obligado, podrá requerir al solicitante para que precise, aclare o cumpla con algún requisito faltante en relación a la solicitud presentada.</li>
+                        <li>En términos del artículo 140 de la Ley de Transparencia y Acceso a la Información Pública, el acceso a la información pública será gratuita. No obstante, en caso de la reproducción de la información, el sujeto obligado, podrá cobrar los siguientes conceptos:
+                        <ul>
+                            <li>El costo de los insumos utilizados en la reproducción de la información. </li>
+                            <li>El costo de su envío.</li>
+                            <li>La certificación de documentos, cuando así proceda.
+                            <ul>
+                                <li>La información deberá ser entregada sin costo, cuando implique la entrega de no más de 20 hojas o copias simples.</li></ul>
+                            </li>
+                            </ul>
+                        </li>
+                        <li>El sujeto obligado tiene 15 días hábiles para contestar la solicitud de información, pudiéndose prorrogar el plazo por 5 días hábiles más con la obligación de hacer del conocimiento de la prórroga al solicitante.</li>
+                        <li>Si no recibes una respuesta a tu solicitud o estás inconforme con la información entregada puedes interponer un recurso de revisión ante el ITAIPBCS, en un plazo de 15 días contados a partir del día siguiente en que se tuvo conocimiento del acto reclamado, en caso de falta de respuesta a partir de día siguiente en que venció el plazo para dar respuesta.</li>
+                        </ol>
+                    </div>
+                </div>
+                
+            </div>
+        	
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row well container-fluid">
+    <form class="busqueda form-inline">
+        <label>Búsqueda:</label>
+        <br>
+        <input type="text" class="form-control">
+        <button type="submit" class="form-control">Buscar</button>
+    </form>
+    </div>
+    <div class="pie row well">
+        <div class="col-sm-3">
+            <div class="col-sm-12"><img class="img-responsive container-fluid" src="logo.png" alt="Instituto de Transparencia y Acceso a la Información Pública del Estado de B.C.S">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <h4>Categorías</h4>
+            <ul>
+                <li>Solicitudes de acceso a la información</li>
+                <li>Recursos de revisión</li>
+                <li>Denuncia por incumplimiento de obligaciones de transparencia</li>
+                <li>Estadísticas</li>
+            </ul>
+        </div>
+        <div class="col-sm-3"><h4>Administrar</h4>
+            <ul>
+                <li>Atender solicitudes</li>
+                <li>Ver solicitudes respondidas</li>
+                <li>Ver solicitudes pendientes</li>
+                <li>Ver estado de solicitudes</li>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+            <button class="btn-lg">Volver Arriba</button>
+            <button class="btn-lg">Suscribirse a información liberada</button>
+        </div>
+    </div>
+</body>
+</html>
+

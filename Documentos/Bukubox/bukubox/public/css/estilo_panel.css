@@ -1,0 +1,155 @@
+@font-face { font-family: 'Comfortaa-Bold'; src: url(../fonts/Comfortaa-Bold.ttf); }
+@font-face { font-family: 'Neou-Bold'; src: url(../fonts/Neou-Bold.ttf); }
+@font-face { font-family: 'Segoe UI'; src: url(../fonts/segoeui.ttf); }
+.lista_deseos {
+	background-color: #ddd;
+	padding: 10px;
+}
+.lista_deseos > div {
+	margin: 10px 0px;
+	height: 140px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	background-color: white;
+	padding: 10px 0px 10px 20px;
+}
+.lista_deseos .libro > div > img {
+	width: 80px;
+	height: 119px;
+}
+.lista_deseos .libro > div:nth-child(2) {
+	height: 120px;
+	width: 71%;
+}
+.lista_deseos .libro > div:nth-child(2) > a {
+	margin: 15px 0 0 0;
+}
+.item_libro {
+	margin: 10px 0px;
+}
+.item_libro > div {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #aaa;
+}
+.item_libro h2 {
+	margin: 9px 0px -5px 0px;
+	font-size: 1.4em;
+}
+.item_libro h3 {
+	margin: 10px 0px;
+	font-size: 0.9em;
+}
+.item_libro a {
+	font-size: 0.8em;
+}
+.detalle_libro {
+	margin: 80px 0;
+}
+.detalle_libro .info_libro > h2 {
+	margin: 0px;
+	padding: 0px;
+}
+.detalle_libro .detalle_agregar_o_rating .rating-star {
+	margin: 7px 0 0 0;
+}
+
+.item_lector {
+	margin: 10px 0px;
+}
+.item_lector > div{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #aaa;
+}
+.item_lector h1 {
+	font-size: 1.3em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0px;
+}
+.item_lector h3 {
+	font-size: 1.1em;
+	margin: 0px;
+}
+.item_lector a {
+	font-size: 0.8em;
+}
+.item_lector .paginas_leidas {
+	font-size: 3em;
+}
+
+
+.item_actividad h1 {
+	font-size: 1.2em;
+}
+.item_actividad h2 {
+	font-size: 0.8em;
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.fadeIn { animation-name: fadeIn; animation-duration: 2s; }
+@keyframes zoomIn { from { opacity: 0; -webkit-transform: scale3d(.3, .3, .3); transform: scale3d(.3, .3, .3); } 50% { opacity: 1; } }
+.zoomIn { animation-name: zoomIn; animation-duration: 0.5s; }
+
+
+.agregar_a_caja_blanca {
+	background-image: url('../images/caja1.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 120px;
+	height: 120px;
+	padding: 55px 0 0 2px;
+	color: black;
+}
+.agregar_a_caja_blanca > span > a  {
+	font-size: 2em;
+	color: gray;
+}
+.agregar_a_caja_blanca > span > a:hover  {
+	color: black;
+}
+.libro_en_caja {
+	background-image: url('../images/caja2.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 120px;
+	height: 120px;
+	padding: 55px 0 0 2px;
+	color:white;
+}
+.libro_en_caja > span > a  {
+	font-size: 2em;
+	color: white;
+}
+.libro_en_caja > span > a:hover  {
+	color: gray;
+}
+
+
+.rating-star, .rating-star > a {
+	color: gray;
+}
+.rating-star .estrella-amarilla, .rating-star > a > .estrella-amarilla {
+	color: gold;
+}
+.rating-star .mi_calificacion {
+	color: orange;
+}
+
+.span_fecha_registro {
+	font-size: 0.8em;
+}
+
+.amistades h2 {
+	font-size: 1.3em;
+}
+
+.linea_division {
+	height: 1px;
+	width: 85%;
+	margin: auto;
+	background-color: #ccc;
+}

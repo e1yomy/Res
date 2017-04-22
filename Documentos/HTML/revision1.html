@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<title>Pantalla</title>
+	<!--<script>setTimeout('document.location.reload()',1000); </script> -->
+	<link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+<!-- jQuery library 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+-->
+<!-- Latest compiled JavaScript
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8"> 
+ -->
+
+</head>
+<body>
+    <div class="encabezado banner container-fuid">
+    </div>
+    <div class="row">
+    <div class="logo col-sm-3 ">
+        <div class="col-sm-12 well"><img class="img-responsive container" src="logo.png" alt="Instituto de Transparencia y Acceso a la Información Pública del Estado de B.C.S">
+        </div>
+        <table class="menu table table-hover">
+		    <thead>
+		      <tr><th>Menú</th></tr>
+		    </thead>
+        </table>
+        <div class="list-group">
+            <a href="#" class = "list-group-item">Listado de solicitudes de acceso</a>
+            <a href="#" class = "list-group-item">Solicitudes atendidas</a>
+            <a href="#" class = "list-group-item">Solicitudes atendiendose</a>
+            <a href="#" class = "list-group-item">Solicitudes pendientes</a>
+            <a href="#" class = "list-group-item">Listado de sujetos obligados</a>
+            <a href="#" class = "list-group-item">Listado de recursos de revisión</a>
+            <a href="#" class = "list-group-item">Recursos de revisión atendidos</a>
+            <a href="#" class = "list-group-item">Recursos de revisión atendiendose</a>
+            <a href="#" class = "list-group-item">Recursos de revisión pendientes</a>
+            <a href="#" class = "list-group-item">Listado de denuncias por incumplimiento de obligaciones</a>
+            <a href="#" class = "list-group-item">Denuncias por incumplimiento atendiendose</a>
+            <a href="#" class = "list-group-item">Denuncias por incumplimiento atendidas</a>
+            <a href="#" class = "list-group-item">Denuncias por incumplimiento pendientes</a>
+        </div>
+    
+    </div>
+    <div class="col-sm-9">
+            <div class="titulo espacio well">
+                <h4 class="titulo">Instituto de Transparencia y Acceso a la Información Pública del Estado de B.C.S.</h4>
+                <h6>Solicitud de Recurso de Revisión</h6>
+            </div>
+            <div class="row">
+                <div class="solicitudes col-sm-12">
+                 <nav class="navbar navbar-default container-fluid">
+                        <div class="navbar-header">
+                          <a class="navbar-brand" href="">Recurso de revisión</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="revision1.html">Recurrente</a></li>
+                            <li><a href="revision2.html">Notificaciones</a></li>
+                            <li><a href="revision3.html">Tercero Interesado</a></li>
+                            <li><a href="revision4.html">Sujeto Obligado</a></li>
+                            
+                            <li><a href="revision5.html">Pruebas</a></li>
+                        </ul>
+                    </nav>
+                    <div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">20%</div></div>
+                    <div class="cuadrodedatos col-sm-12">
+                        <form>
+                            <div class="form-grup row">
+                                <label>Datos del recurrente</label>
+                                <br>
+                                <input type="text" class="form-control col-sm-4" placeholder="Apellido Paterno">
+                                <input type="text" class="form-control col-sm-4" placeholder="Apellido Materno">
+                                <input type="text" class="form-control col-sm-4" placeholder="Nombre (s)">
+                                </div>
+                                <br>
+                                
+                                <div class="form-group row">
+                                <label>Representante <input type="checkbox" value=""></label>
+                                <br>
+                                <input type="text" class="form-control" placeholder="Apellido Paterno">
+                                <input type="text" class="form-control" placeholder="Apellido Materno">
+                                <input type="text" class="form-control" placeholder="Nombre (s)">
+                            </div>
+                                   <div class="form-group row">
+                                <label>Seleccionar el medio por el cuál acredita la representación
+                                    </label>
+                                    <div class="radio"><label><input type="radio" name="optradio">Poder notarial otorgado mediante escritura pública</label></div>
+                                    <div class="radio"><label><input type="radio" name="optradio">Carta Poder</label></div>
+                                    <div class="radio"><label><input type="radio" name="optradio">Otro documento</label></div>
+                                    <input type="file" >
+
+                                </div>
+                                    
+                            
+                            
+                        </form>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+        	
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row well container-fluid">
+        
+    <form class="busqueda form-inline">
+        <label>Búsqueda:</label>
+        <input type="text" class="form-control">
+        <button type="submit" class="form-control">Buscar</button>
+    </form>
+    </div>
+    <div class="pie row well">
+        <div class="col-sm-3">
+            <div class="col-sm-12"><img class="img-responsive container-fluid" src="logo.png" alt="Instituto de Transparencia y Acceso a la Información Pública del Estado de B.C.S">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <h4>Categorías</h4>
+            <ul>
+                <li>Solicitudes de acceso a la información</li>
+                <li>Recursos de revisión</li>
+                <li>Denuncia por incumplimiento de obligaciones de transparencia</li>
+                <li>Estadísticas</li>
+            </ul>
+        </div>
+        <div class="col-sm-3"><h4>Administrar</h4>
+            <ul>
+                <li>Atender solicitudes</li>
+                <li>Ver solicitudes respondidas</li>
+                <li>Ver solicitudes pendientes</li>
+                <li>Ver estado de solicitudes</li>
+            </ul>
+        </div>
+        <div class="col-sm-3">
+            <button class="btn-lg">Volver Arriba</button>
+            <button class="btn-lg">Suscribirse a información liberada</button>
+        </div>
+    </div>
+</body>
+</html>
+

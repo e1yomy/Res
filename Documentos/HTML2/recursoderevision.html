@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	
+	<!--<script>setTimeout('document.location.reload()',1000); </script> -->
+	<title>Recurso de revisión</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <script src="js/app.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery-3.2.0.js"></script>
+</head>
+<body>
+    <div class="encabezado banner container-fuid">
+    </div>
+    <div class="row">
+    <div class="logo col-sm-3 ">
+        <div class="col-sm-12 well"><img class="img-responsive container" src="logo.png" alt="Instituto de Transparencia y Acceso a la Información Pública del Estado de B.C.S">
+        </div>
+        <menu></menu>
+    
+    </div>
+    <div class="col-sm-9" id="cuadro">
+            <div class="titulo espacio well">
+                <h4 class="titulo">Instituto de Transparencia y Acceso a la Información Pública del Estado de B.C.S.</h4>
+                <h6>Solicitud de Recurso de Revisión</h6>
+            </div>
+            <div class="row">
+                <div class="solicitudes col-sm-12" ng-controller="tabController as tab">
+                 <nav class="navbar navbar-default">
+                 	<div class="container-fluid">
+                        <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			              <span class="sr-only">Toggle navigation</span>
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			            </button>
+                          <a class="navbar-brand" >Recurso de revisión</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li ng-class="{active: tab.estaSeleccionado(1)}"><a href ng-click="tab.seleccionar(1)">Recurrente</a></li>
+                            <li ng-class="{active: tab.estaSeleccionado(2)}"><a href ng-click="tab.seleccionar(2)">Notificaciones</a></li>
+                            <li ng-class="{active: tab.estaSeleccionado(3)}"><a href ng-click="tab.seleccionar(3)">Tercero Interesado</a></li>
+                            <li ng-class="{active: tab.estaSeleccionado(4)}"><a href ng-click="tab.seleccionar(4)">Sujeto Obligado</a></li>
+                            <li ng-class="{active: tab.estaSeleccionado(5)}"><a href ng-click="tab.seleccionar(5)">Pruebas</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                 </nav>
+                    
+                    <div class="" ng-show="tab.estaSeleccionado(1)">
+                        <div class="cuadrodedatos col-sm-12">
+                        <form>
+                            <div class="form-grup row">
+                                <label>Datos del recurrente</label>
+                                <br>
+                                <input type="text" class="form-control col-sm-4" placeholder="Apellido Paterno">
+                                <input type="text" class="form-control col-sm-4" placeholder="Apellido Materno">
+                                <input type="text" class="form-control col-sm-4" placeholder="Nombre (s)">
+                                </div>
+                                <br>
+                                
+                                <div class="form-group row">
+                                <label>¿Hay Representante?<input type="checkbox" value="" ng-model="representante"></label>
+                                <br>
+                                <div ng-show="representante">
+                               <label>Nombre del Representante </label>
+                                <input type="text" class="form-control" placeholder="Apellido Paterno">
+                                <input type="text" class="form-control" placeholder="Apellido Materno">
+                                <input type="text" class="form-control" placeholder="Nombre (s)">
+                                </div>
+                            </div>
+                                   <div class="form-group row" ng-show="representante">
+                                    <label>Seleccionar el medio por el cuál acredita la representación
+                                    </label>
+                                    <div class="radio"><label><input type="radio" name="optradio">Poder notarial otorgado mediante escritura pública</label></div>
+                                    <div class="radio"><label><input type="radio" name="optradio">Carta Poder</label></div>
+                                    <div class="radio"><label><input type="radio" name="optradio">Otro documento</label></div>
+                                    <input type="file" >
+
+                                </div>
+                                    
+                            
+                            
+                        </form> 
+                        <br>
+                        </div>
+                    </div>
+                    <div class="" ng-show="tab.estaSeleccionado(2)">
+                        <div class="cuadrodedatos col-sm-11">
+                        <form>
+                           <div class="form-grup row">
+                                <label>Domicilio y/o correo electrónico para recibir notificaciones</label>
+                                <br>
+                                <input type="text" class="form-control" placeholder="Calle" >
+                                <input type="text" class="form-control" placeholder="Número exterior">
+                                <input type="text" class="form-control" placeholder="Número interior">
+                                <input type="text" class="form-control" placeholder="Entre las calles">
+                                <input type="text" class="form-control" placeholder="Colonia">
+                                <input type="text" class="form-control" placeholder="Codigo postal">
+                                <input type="text" class="form-control" placeholder="Municipio">
+                                <input type="text" class="form-control" placeholder="Entidad Federativa">
+                                <input type="text" class="form-control" placeholder="Correo electrónico">
+                                <input type="text" class="form-control" placeholder="Confirmar correo electrónico">
+                            </div>
+                            <br>
+                            <div class="form-grup row">
+                                <label>Medio por el cual desea recibir las notificaciones personales</label>
+                                <br>
+                                <div class="checkbox col-sx-6">
+                                    <label><input type="checkbox" value="">Correo electronico </label>
+                                </div>
+                                <div class="checkbox col-sx-6">
+                                    <label><input type="checkbox" value="">Domicilio </label>
+                                </div>
+                                <div class="checkbox col-sx-6">
+                                    <label><input type="checkbox" value="">Plataforma Nacional de Transparencia</label>
+                                </div>
+                                    
+                            </div>
+                            <br><br>
+                            
+                            
+                        </form>
+                        <br>
+                        </div>
+                    </div>
+                    <div class="" ng-show="tab.estaSeleccionado(3)">
+                        <div class="cuadrodedatos col-sm-11">
+                       <form>
+                        <div class="form-group row">
+                                <label>¿Hay tercero interesado?<input type="checkbox" value="" ng-model="tercero"></label>
+                                <br>
+                                <div ng-show="tercero">
+                                <label>Nombre del tercer interesado</label>
+                                <input type="text" class="form-control" placeholder="Apellido Paterno">
+                                <input type="text" class="form-control" placeholder="Apellido Materno">
+                                <input type="text" class="form-control" placeholder="Nombre (s)">
+                                
+                        </div>
+                        <br>
+                        <div class="form-grup" ng-show="tercero">
+                                
+                                
+                                <label>Domicilio y/o correo electrónico del tercero interesado</label>
+                                <br>
+                                <input type="text" class="form-control" placeholder="Calle" >
+                                <input type="text" class="form-control" placeholder="Número exterior">
+                                <input type="text" class="form-control" placeholder="Número interior">
+                                <input type="text" class="form-control" placeholder="Entre las calles">
+                                <input type="text" class="form-control" placeholder="Colonia">
+                                <input type="text" class="form-control" placeholder="Codigo postal">
+                                <input type="text" class="form-control" placeholder="Municipio">
+                                <input type="text" class="form-control" placeholder="Entidad Federativa">
+                                <input type="text" class="form-control" placeholder="Correo electrónico">
+                            </div>
+                            
+                           </div>
+                        </form>
+                        <br>
+                        </div>
+                    </div>
+                    <div class="" ng-show="tab.estaSeleccionado(4)">
+                        <div class="cuadrodedatos col-sm-11">
+                       <form>
+                            <div class="form-grup row">
+                                <label>Sujeto obligado ante quien se presentó la solicitud de información (Autoridad Responsable)</label>
+                                    <input type="text" class="form-control" placeholder="Sujeto obligado" >
+                            </div>   
+                            <br>
+                            <div class="form-grup row">
+                                <label>Acto que se recurre</label>
+                                    <textarea class="form-control" rows="5" placeholder="Causal de procedencia del Recurso de Revisión, establecidas en el Art. 144 de la Ley de Transparencia y Acceso a la Información Pública del Estado de Baja California Sur" ></textarea>
+                            </div>      
+                            <br>
+                            <div class="form-grup row">
+                                <label>Fecha en que fue notificada la respuesta o tuvo conocimiento del acto recurrido, o en el caso de falta de respuesta, fecha en la cual presentó la solicitud</label>
+                                    <input type="text" class="form-control" >
+                            </div>     
+                             <br>
+                            <div class="form-grup row">
+                                <label>Causas o motivos de inconformidad</label>
+                                    <textarea class="form-control" rows="5" placeholder="Razones por las cuales el acto recurrido le causa agravio" ></textarea>
+                            </div>                           
+                        </form>
+                        <br>
+                        </div>
+                    </div>
+                    <div class="" ng-show="tab.estaSeleccionado(5)">
+                        <div class="cuadrodedatos col-sm-11">
+                        <form>
+                          <div class="form-grup row">
+                                <label>Pruebas</label>
+                                <textarea rows="5" class="form-control" placeholder="Deberá señalar y acompañar al presente format o, los elementos ofrecidos como pruebas."></textarea>
+                              <br>
+                              <input type="file" >
+                            </div>
+                        </form>
+                        <br>
+                        </div>   
+                        </div>
+                    <botonesdenavegacion></botonesdenavegacion>
+                    </div>
+            </div>
+        	
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row well container-fluid">
+        
+    <form class="busqueda form-inline">
+        <label>Búsqueda:</label>
+        <input type="text" class="form-control">
+        <button type="submit" class="form-control">Buscar</button>
+    </form>
+    </div>
+    <piedepagina></piedepagina>
+</body>
+</html>
+

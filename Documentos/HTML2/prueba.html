@@ -1,0 +1,174 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+   <title>Acceso a la información</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <script src="js/app.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery-3.2.0.js"></script>
+  </head>
+<body>
+    <div class="encabezado banner container-fuid">
+    </div>
+    <div class="row">
+    <div class="logo col-sm-3 ">
+        <div class="col-sm-12 well">
+            <img class="img-responsive container" src="logo.png" alt="Instituto de Transparencia y Acceso a la Información Pública del Estado de B.C.S">
+        </div>
+        <menu></menu>
+    </div>
+    <div class="col-sm-9"  id="cuadro">
+            <div class="titulo espacio well">
+                <h4 class="titulo">Instituto de Transparencia y Acceso a la Información Pública del Estado de B.C.S.</h4>
+                <h6>Solicitud de acceso a la información</h6>
+            </div>
+            <div class="row" >
+                <div class="solicitudes col-sm-12"  ng-controller="tabController as tab">
+                 <nav class="navbar navbar-default container-fluid" >
+                        <div class="navbar-header">
+                          <a class="navbar-brand" href="">Solicitud de información</a>
+                        </div>
+                        <ul class="nav navbar-nav" >
+                            <li ng-class="{active: tab.estaSeleccionado(1)}"><a href ng-click="tab.seleccionar(1)">Solicitante</a></li>
+                            <li ng-class="{active: tab.estaSeleccionado(2)}"><a href ng-click="tab.seleccionar(2)">Notificaciones</a></li>
+                            <li ng-class="{active: tab.estaSeleccionado(3)}"><a href ng-click="tab.seleccionar(3)">Sujeto obligado</a></li>
+                            <li ng-class="{active: tab.estaSeleccionado(4)}"><a href ng-click="tab.seleccionar(4)">Descripción</a></li>
+                            <li ng-class="{active: tab.estaSeleccionado(5)}"><a href ng-click="tab.seleccionar(5)">Modalidad de entrega</a></li>
+                        </ul>
+                    </nav>
+                    <div class="cuadrodedatos col-sm-7">
+	                    <div class="panel" ng-show="tab.estaSeleccionado(1)">
+		                        <form>
+		                            <div class="form-grup row">
+		                                <label>Nombre Completo Persona Física (Opcional)</label>
+		                                <br>
+		                                <input type="text" class="form-control" placeholder="Apellido Paterno" >
+		                                <input type="text" class="form-control" placeholder="Apellido Materno">
+		                                <input type="text" class="form-control" placeholder="Nombre (s)">
+		                            </div>
+		                            <br>
+		                            <div class="form-group row">
+		                                <label>Nombre del Representante <input type="checkbox" value=""></label>
+		                                <br>
+		                                <input type="text" class="form-control" placeholder="Apellido Paterno">
+		                                <input type="text" class="form-control" placeholder="Apellido Materno">
+		                                <input type="text" class="form-control" placeholder="Nombre (s)">
+		                            </div>
+		                            <br>
+		                            <div class="form-group row">
+		                                    <label>Nombre, denominación o razón social (en caso de ser persona moral)</label>
+		                                <br>
+		                                <input type="text" class="form-control" placeholder="Denominación o razón social" >
+		                                <input type="text" class="form-control form-inline" placeholder="Nombre (s) de el (de los) representante (s) para oir y recibir notificaciones y documentos (adjuntar documento que acredite su representación)">
+		                                    <input type="file" >
+		                                    <br>
+		                                    <label>Seleccionar el medio por el cuál acredita la representación<br>
+		                                        <label class="radio-inline"><input type="radio">Poder notarial</label>
+		                                        <label class="radio-inline"><input type="radio">Carta poder</label>
+		                                        <label class="radio-inline"><input type="radio">Otro documento <input type="te
+		                                            "></label>
+		                                    </label>
+		                            </div>
+		                        </form>
+	                    </div>
+		                <div class="panel" ng-show="tab.estaSeleccionado(2)">
+		                        <form>
+		                            <div class="form-grup row">
+		                                <label>Medio para recibir la información</label>
+		                                <br>
+		                                <div class="checkbox col-sm-6">
+		                                    <label><input type="checkbox" value="">Correo electronico <input type="text" class="col-sm-12"> </label>
+		                                </div>
+		                                <div class="checkbox col-sm-6">
+		                                    <label><input type="checkbox" value="">Domicilio </label>
+		                                </div>
+		                                <div class="checkbox col-sm-6">
+		                                <label><input type="checkbox" value="">Acudir ante la Unidad de Transparencia del Sujeto Obligado </label>
+		                                </div>
+		                                <div class="checkbox col-sm-6">
+		                                    <label><input type="checkbox" value="">Plataforma Nacional de Transparencia</label>
+		                                </div>
+		                            </div>
+		                            <br><br>
+		                            <div class="form-grup row">
+		                                <label>En caso de seleccionar dimicilio, favor de anotar los siguientes datos:</label>
+		                                <br>
+		                                <input type="text" class="form-control" placeholder="Calle" >
+		                                <input type="text" class="form-control" placeholder="Número exterior">
+		                                <input type="text" class="form-control" placeholder="Número interior">
+		                                <input type="text" class="form-control" placeholder="Entre las calles">
+		                                <input type="text" class="form-control" placeholder="Colonia">
+		                                <input type="text" class="form-control" placeholder="Codigo postal">
+		                                <input type="text" class="form-control" placeholder="Entidad Federativa">
+		                                <input type="text" class="form-control" placeholder="Municipio">
+		                                <input type="text" class="form-control" placeholder="Teléfono">
+		                            </div>
+		                        </form>
+	                    </div>
+		                <div class="panel" ng-show="tab.estaSeleccionado(3)">
+			                        <form>
+			                            <div class="form-grup row">
+			                                <label>Sujeto obligado a quien dirige su solicitud (Obligatorio)</label>
+			                                    <input type="text" class="form-control" placeholder="Sujeto obligado" >  
+			                            </div>               
+			                        </form>
+		                </div>
+		                <div class="panel" ng-show="tab.estaSeleccionado(4)">
+		                        <form>
+		                            <div class="form-grup row">
+		                                <label>Descripción clara y precisa de la información solicitada (Obligatorio)</label>
+		                                    <textarea class="form-control" rows="5" placeholder="Con el fin de brindar un mejor servicio, además de describir la información o documentos que solicita, se sugiere proporcionar todos los datos que considere facilitan su búsqueda." ></textarea>
+		                            </div>   
+		                        </form>
+	                	</div>
+		                <div class="panel" ng-show="tab.estaSeleccionado(5)">
+		                        <form>
+		                            <div class="form-grup row">
+		                                <label>Modalidad en que se desea </label>
+		                                <br>
+		                                <div class="checkbox col-sm-6"><label><input type="checkbox" value="">Consulta directa</label></div>
+		                                <div class="checkbox col-sm-6"><label><input type="checkbox" value="">Copia simple</label></div>
+		                                <div class="checkbox col-sm-6"><label><input type="checkbox" value="">Copia simple con costo mas de 20 hojas</label></div>
+		                                <div class="checkbox col-sm-6"><label><input type="checkbox" value="">Copia certificada con costo </label></div>
+		                                <div class="checkbox col-sm-6"><label><input type="checkbox" value="">Correo electronico </label></div>
+		                                <div class="checkbox col-sm-6"><label><input type="checkbox" value="">Digitalizada</label></div>
+		                                <div class="checkbox col-sm-6"><label><input type="checkbox" value="">Otro <input type="text" class="form-inline" placeholder="Especificar"></label></div> 
+		                            </div>
+		                            <br><br>
+		                        </form>
+	                	</div>
+	                	<botonesdenavegacion></botonesdenavegacion>
+	                <div>
+	                </div>
+	                </div>
+                    <div class="col-sm-5">
+                    <instructivo></instructivo>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="row well container-fluid">
+    <form class="busqueda form-inline">
+        <label>Búsqueda:</label>
+        <br>
+        <input type="text" class="form-control">
+        <button type="submit" class="form-control">Buscar</button>
+    </form>
+    </div>
+    
+    
+    <piedepagina></piedepagina>
+</body>
+</html>

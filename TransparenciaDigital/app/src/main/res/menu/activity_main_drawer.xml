@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_missolicitudes"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Mis solicitudes" />
+        <item
+            android:id="@+id/nav_acceso"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Sol. de informacion" />
+        <item
+            android:id="@+id/nav_denuncia"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Denuncia por incumplimiento" />
+        <item
+            android:id="@+id/nav_sujetosobligados"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Sujetos Obligados" />
+    </group>
+
+
+    <item>
+    <menu>
+        <item
+            android:id="@+id/nav_registro"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Registrate"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_salir"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Salir" />
+    </menu>
+    </item>
+
+</menu>
