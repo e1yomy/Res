@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,16 +19,23 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 import static android.content.Context.MEDIA_PROJECTION_SERVICE;
 import static transparencia.itai.com.transparenciadigital.MainActivity.HabilitarMenu;
+import static transparencia.itai.com.transparenciadigital.MainActivity.IniciarSesion;
+import static transparencia.itai.com.transparenciadigital.MainActivity.c;
 import static transparencia.itai.com.transparenciadigital.MainActivity.drawer;
 import static transparencia.itai.com.transparenciadigital.MainActivity.fragmentManager;
 import static transparencia.itai.com.transparenciadigital.MainActivity.navigationView;
 import static transparencia.itai.com.transparenciadigital.MainActivity.preferences;
 import static transparencia.itai.com.transparenciadigital.MainActivity.sesion;
+import static transparencia.itai.com.transparenciadigital.MainActivity.txtEmailUsuario;
+import static transparencia.itai.com.transparenciadigital.MainActivity.txtNoSolicitudes;
+import static transparencia.itai.com.transparenciadigital.MainActivity.txtNombreUsuario;
+
 
 
 /**
@@ -133,6 +141,7 @@ public class Sesion extends Fragment implements Registro.OnFragmentInteractionLi
     LinearLayout layoutInicioSesion;
     Button btnRegistro1;
     ArrayList<EditText> textos= new ArrayList<>();
+    EditText editCuenta, editContrasena;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -142,6 +151,9 @@ public class Sesion extends Fragment implements Registro.OnFragmentInteractionLi
         registro=(TextView)view.findViewById(R.id.txtRegistro);
         fragmentManager= getFragmentManager();
         registro.setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
+
+        editCuenta = (EditText)view.findViewById(R.id.editCuenta);
+        editContrasena = (EditText)view.findViewById(R.id.editContrasena);
 
         layoutRegistro1 = (ScrollView)view.findViewById(R.id.layoutRegistro1);
         layoutInicioSesion=(LinearLayout)view.findViewById(R.id.layoutInicioSesion);
@@ -219,11 +231,21 @@ public class Sesion extends Fragment implements Registro.OnFragmentInteractionLi
         entrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                preferences.edit().putBoolean("sesion",true).commit();
-                HabilitarMenu(preferences.getBoolean("sesion",false));
-                navigationView.getMenu().getItem(0).setChecked(true);
-                fragmentManager.beginTransaction().replace(R.id.content_principal, new MisSolicitudes()).commit();
+
+
+                        try {
+
+                            //MainActivity.fragmentManager.beginTransaction().replace(R.id.content_principal, new MisSolicitudes()).commit();
+
+                            IniciarSesion(editCuenta.getText().toString(),editContrasena.getText().toString());
+                        } catch (Exception ex) {
+                            String exx = ex.getMessage();
+                            Log.e("Error",ex.getMessage(),ex.getCause());
+
+                        }
+
             }
         });
     }
+
 }
