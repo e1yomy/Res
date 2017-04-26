@@ -1,0 +1,53 @@
+<?php
+//Clase creada para manejar documentos XML
+class ConsultaXML extends XMLWriter
+{
+//Funcion que inicializa le documento XML, 
+//establece el contenido de su encabezado y abre el elementos raiz
+	function iniciaDocumento($elementoRaiz = "Consulta", $version = "1.0",$juegoDeCaracteres = "UTF-8")
+	{
+		$this->openMemory();
+		$this->setIdent(true);
+		$this->setIdentString(" ");
+		$this->startDocument($version,$juegoDeCaracteres);
+		$this->startElement($elementoRaiz);
+	}
+	//Metodo que crea el elemento Campo dentro del documento, recibiendo como parametros el nombre del
+	//campo y el valor que contendra
+	public function creaCampo($nombreDelCampo,$valor)
+	{
+		$this->startElement("Campo");
+		$this->writeAttribute("nombre",$nombreDelCampo);
+		$this->text($valor);
+		$this->endElement();
+	}
+	//Metodo que crea el elemento Registro dentro del documento,
+	//recibiendo como parametros el arreglo asociativo que contendra 
+	//los nombres y valores de los campos
+	public function creaRegistroDesdArreglo($arreglo, $idRegistro)
+	{
+		$this->startElement("Registro");
+		$this->writeAttribute("id",$idRegistro);
+		if(is_array($arreglo))
+		{
+			foreach ($arreglo as $llave => $valor) 
+			{
+				$this->creaCampo($llave,$valor);
+			}
+		}
+	}
+	//Cierra el elemento raiz y finaliza el documento
+	public function finalizaDocumento()
+	{
+		$this->endElement();
+		$this->endDocument();
+		return $this->outputMemory();
+	} 
+	//Devolver el documento XML con el formato adecuado
+	public function salida()
+	{
+		header('Content-type: text/xml');
+		echo $this->finalizaDocumento();
+	}
+}
+?>

@@ -1,0 +1,67 @@
+<?php
+require('conexion.php');
+require('consultaxml.php');
+require_once "lib/nusoap.php";
+function obtenerLibros()
+{
+	$consulta = "select * from libros";
+	$libros = $conexion->query($consulta);
+	$salida = new array();
+	$contador = 0;
+	while ($libro = $libros->fetch_array()) 
+	{
+		$salida[$contador] = array(
+			'LibroID'=>$libro["idlibro"],
+			'Autor'=>$libro["autor"],
+			'Titulo'=>$libro["titulo"]
+			)
+	}
+
+	/*
+	$consultaXML = new ConsultaXML();
+	$consultaXML->iniciaDocumento();
+	$consultaXML->startElement("Tabla");
+	$consultaXML->writeAttribute("nombre","autores");
+	while ($libro = $libros->fetch_array()) 
+	{
+		$consultaXML->creaRegistroDesdeArreglo($libro,"Id");
+	}
+	$consultaXML->endElement();
+	$consultaXML->salida();*/
+}
+$espacionombres = "urn:Libros_wsdl";
+$server = new soap_server();
+$server->configureWSDL("Libros_wsdl","urn:Libros_wsdl");
+$server->wsdl->schemaTargetNameSpace=$espacionombres;
+//
+$server->wsdl->addComplexType(
+	'Libros_libro',
+	'complexType','struct','all','',
+	array('LibroID'=>array('name'=>'LibroID','type'=>
+		'xsd:int'),
+		'Autor'=>array('name'=>'Autor','type'=>
+			'xsd:string'),
+		'Titulo'=>array('name'=>'Titulo','type'=>
+			'xsd:string')
+		)
+	);
+//
+$server->wsdl->addComplexType(
+	'Libros_libro',
+	'complexType','array','','SOAP-ENC:Array',
+	array(),array(array('ref'=>'SOAP-ENC:arrayType',
+		'wsdl:arrayType'=>'tns:Libros_libro[]')),
+	'tns:Libros_libro'
+	'urn:Libros_wsdl#obtenerLibros',
+	'rpc'
+	);
+$server->register(
+	'obtenerLibros',
+	array(''=>'xsd:void'),array(array('ref'=>'SOAP-ENC:arrayType',
+		'wsdl:arrayType'=>'tns:Libros_libro[]')),
+	'tns:Libros_libro'
+	);
+
+$server->register("obtenerLibros",);
+$server->service($HTTP_RAW_POST_DATA);
+?>
