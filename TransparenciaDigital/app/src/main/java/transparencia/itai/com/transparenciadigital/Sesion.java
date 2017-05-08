@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.GravityCompat;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -17,26 +15,20 @@ import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 
-import static android.content.Context.MEDIA_PROJECTION_SERVICE;
-import static transparencia.itai.com.transparenciadigital.MainActivity.HabilitarMenu;
 import static transparencia.itai.com.transparenciadigital.MainActivity.IniciarSesion;
-import static transparencia.itai.com.transparenciadigital.MainActivity.c;
-import static transparencia.itai.com.transparenciadigital.MainActivity.drawer;
-import static transparencia.itai.com.transparenciadigital.MainActivity.fragmentManager;
-import static transparencia.itai.com.transparenciadigital.MainActivity.navigationView;
 import static transparencia.itai.com.transparenciadigital.MainActivity.preferences;
-import static transparencia.itai.com.transparenciadigital.MainActivity.sesion;
 import static transparencia.itai.com.transparenciadigital.MainActivity.toolbar;
-import static transparencia.itai.com.transparenciadigital.MainActivity.txtEmailUsuario;
-import static transparencia.itai.com.transparenciadigital.MainActivity.txtNoSolicitudes;
-import static transparencia.itai.com.transparenciadigital.MainActivity.txtNombreUsuario;
 
 
 
@@ -59,6 +51,17 @@ public class Sesion extends Fragment implements Registro.OnFragmentInteractionLi
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    //variables para el servicio
+    URL direccion=null;
+    String urlprevia="";
+    final String webService= "http://pruebastec.890m.com/webservices/";
+    String linea="";
+    int respuesta=0;
+    StringBuilder resul=new StringBuilder();
+    HttpURLConnection conection;
+
+
 
     public Sesion() {
         // Required empty public constructor
@@ -91,6 +94,57 @@ public class Sesion extends Fragment implements Registro.OnFragmentInteractionLi
         }
     }
 
+    public String Registrar(String correo, String contrasena, String nombre , String paterno, String materno , String calles,
+                            String numExt, String numint, String entreCalles, String colonia, String CP, String entidad,
+                            String municipio, String telefono){
+        URL url=null;
+        String linea="";
+        int respuesta = 0;
+        StringBuilder resul = null;
+
+
+            try {
+                url=new URL(webService+"registro.php?"+"usu="+correo+"&pas="+contrasena+
+                        "&nom="+nombre+"&paterno="+paterno+"&materno="+materno+ "&calles="+calles+"&numeroExterior="+
+                        numExt+"&numeroInterior="+numint+"&entreCalles="+entreCalles+ "&colonia="+colonia+"&CP="+CP+
+                        "&entidad="+entidad+"&municipio="+municipio+"&telefono="+telefono);
+
+                HttpURLConnection connection =(HttpURLConnection)url.openConnection();
+                respuesta = connection.getResponseCode();
+                resul= new StringBuilder();
+                if (respuesta==HttpURLConnection.HTTP_OK){
+                    InputStream in =new BufferedInputStream(connection.getInputStream());
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+                    while ((linea=reader.readLine())!=null){
+                         resul.append(linea);
+                    }
+                }
+
+            }
+            catch (Exception ex){
+                String s = ex.getMessage();
+            }
+
+        //Else de mensaje de error por falta de red
+        return resul.toString();
+    }
+
+    public int ConexionCorrecta(String url){
+        try {
+            direccion= new URL(url);
+            conection = (HttpURLConnection) direccion.openConnection();
+            respuesta = conection.getResponseCode();
+            resul = new StringBuilder();
+            if(respuesta==HttpURLConnection.HTTP_OK)
+                return 1;
+            else
+                return 0;
+        }
+        catch (Exception ex){
+            return 0;
+        }
+
+    }
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
@@ -213,7 +267,9 @@ public class Sesion extends Fragment implements Registro.OnFragmentInteractionLi
 
                     //MainActivity.fragmentManager.beginTransaction().replace(R.id.content_principal, new MisSolicitudes()).commit();
 
+                    //Funcion del MainActivity que hace la llamada al inicio de sesion desde un hilo
                     IniciarSesion(editCuenta.getText().toString(),editContrasena.getText().toString());
+
                 } catch (Exception ex) {
                     String exx = ex.getMessage();
                     Log.e("Error",ex.getMessage(),ex.getCause());

@@ -133,10 +133,13 @@ public class MainActivity extends AppCompatActivity
         }
         else if(id==R.id.nav_quienessomos){
             fragmentTransaction.replace(R.id.content_principal,new QuienesSomos()).commit();
+            navigationView.getMenu().getItem(4).setChecked(true);
+            drawer.closeDrawer(GravityCompat.START);
+            return false;
         }
         if(!preferences.getBoolean("sesion",false))
         {
-            //fragmentManager.beginTransaction().replace(R.id.content_principal,new Sesion()).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_principal,new Sesion()).commit();
 
         }
         else
@@ -164,7 +167,6 @@ public class MainActivity extends AppCompatActivity
 
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return false;
     }
@@ -234,6 +236,7 @@ public class MainActivity extends AppCompatActivity
             public void run() {
                 try {
                     Conexion conexion = new Conexion();
+                    ///Borrar el tercer parametro para que vuelva a funcionar como antes
                     if(conexion.IniciarSesion(cuenta,contra)==1) {
 
                         ini=1;
@@ -281,8 +284,6 @@ public class MainActivity extends AppCompatActivity
     }
     public static void RecuperarDatosDeUsuario(){
         usr= new Usuario(
-                preferences.getString("idUsuario",""),
-                preferences.getString("idRol",""),
                 preferences.getString("correo",""),
                 preferences.getString("contrasena",""),
                 preferences.getString("nombre",""),
