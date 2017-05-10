@@ -1,0 +1,138 @@
+create database ITAI;
+
+use ITAI;
+
+create table ciudadano(
+idUsuario int(5) Primary key, 
+correo varchar(20) not null,
+contrasena  varchar(15) not null,
+nombre varchar(20) not null,
+apellidoPaterno varchar(20) not null,
+apellidoMaterno varchar(20) not null,
+calle varchar(20) not null,
+numeroExterior varchar(12) not null,
+numeroInterior varchar(12),
+entreCalles varchar(30) not null,
+colonia varchar(15) not null,
+CP varchar(4) not null,
+entidad varchar(12) not null,
+municipio varchar(12) not null,
+telefono varchar(12) not null);
+
+
+create table usuarios(
+idUs int(5) Primary key,
+idRol int(5) not null,
+cuenta varchar(12) not null, 
+contrasena  varchar(15) not null,
+correo varchar(20) not null,
+nombre varchar(20) not null,
+apellidoPaterno varchar(20) not null,
+apellidoMaterno varchar(20) not null,
+institucion varchar(20) not null,
+foreign key(idRol) references rol(idRol));
+
+
+create table rol(
+idRol int(5) Primary key,
+tipoRol varchar(12) not null);
+
+
+create table solAcceso(
+idAcceso int(5) Primary key,
+folio int(10) not null,
+fecha datetime not null,
+idUsuario int(5) not null,
+nombre varchar(12), 
+apellidoPaterno varchar(20),
+apellidoMaterno varchar(20),
+idNotificaciones int(5),
+correo varchar(20),
+calles varchar(12),
+numeroExterior varchar(12),
+colonia varchar(12),
+CP varchar(4),
+entidad varchar(12),
+municipio varchar(12),
+idSujeto int(5) not null,
+nombreSujeto varchar(20) not null,
+descripcion varchar(200) not null,
+IdtipoDeEntrega int(5) not null,
+foreign key(idUsuario) references usuario(idUsuario),
+foreign key(idNotificaciones) references notificaciones(idNotificaciones),
+foreign key(IdtipoDeEntrega) references tipoDeEntrega(IdtipoDeEntrega),
+foreign key(idSujeto) references sujetoObligado(idSujeto));
+
+
+create table recRevision(
+idRecurso int(5) Primary key,
+idUsuario int(5) not null,
+folio int(10) not null,
+nombre varchar(12), 
+apellidoPaterno varchar(20),
+apellidoMaterno varchar(20),
+correo varchar(20),
+calles varchar(12),
+numeroExterior varchar(12),
+colonia varchar(12),
+CP varchar(4),
+entidad varchar(12),
+municipio varchar(12),
+nombreRepresentante varchar(12), 
+apellidoPaternoRepresentante varchar(20),
+apellidoMaternoRepresentante varchar(20),
+correoRepresentante varchar(20),
+idTipoDeEntrega int(5) not null,
+nombreTercero varchar(12), 
+apellidoPaternoTercero varchar(20),
+apellidoMaternoTercero varchar(20),
+correotercero varchar(20),
+callesTercero varchar(12),
+numeroExteriorTercero varchar(12),
+coloniaTercero varchar(12),
+CPTercero varchar(4),
+entidadTercero varchar(12),
+municipioTercero varchar(12),
+idSujeto int(5) not null,
+nombreSujeto varchar(20) not null,
+causa varchar(200) not null,
+motivo varchar(200) not null,
+pruebas varchar(200) not null,
+fecha datetime not null,
+foreign key(idTipoDeEntrega) references tipoDeEntrega(idTipoDeEntrega),
+foreign key(idUsuario) references usuario(idUsuario),
+foreign key(idSujeto) references sujetoObligado(idSujeto));
+
+
+create table demIncumplimiento(
+idDemanda int(5) Primary key,
+idUsuario int(5) not null,
+folio int(10) not null,
+nombre varchar(12), 
+apellidoPaterno varchar(20),
+apellidoMaterno varchar(20),
+correo varchar(20),
+calles varchar(12),
+numeroExterior varchar(12),
+colonia varchar(12),
+CP varchar(4),
+entidad varchar(12),
+municipio varchar(12),
+idTipoDeEntrega varchar(20) not null,
+idSujeto int(5) not null,
+nombreSujeto varchar(20) not null,
+descripcion varchar(200) not null,
+fecha datetime not null,
+foreign key(IdtipoDeEntrega) references tipoDeEntrega(IdtipoDeEntrega),
+foreign key(idUsuario) references usuario(idUsuario),
+foreign key(idSujeto) references sujetoObligado(idSujeto));
+
+
+create table tipoDeEntrega(
+IdTipoDeEntrega int(5) Primary key,
+tipo varchar(12) not null);
+
+
+create table notificaciones(
+idNotificaciones int(5) Primary key,
+tipoNotificacion varchar(12) not null);
