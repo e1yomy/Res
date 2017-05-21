@@ -29,50 +29,12 @@ public class Conexion {
 
     URL direccion=null;
     String urlprevia="";
-    final String webService= "http://pruebastec.890m.com/webservices/";
+    final String webService= "http://pruebastec.890m.com/webservices";
     String linea="";
     int respuesta=0;
     StringBuilder resul=new StringBuilder();
     HttpURLConnection conection;
     final String contrasenaWS="patito";
-
-    public ArrayList<String> GetSolicitudes(String usuario){
-        urlprevia=webService+"";
-
-        if(ConexionCorrecta(urlprevia)==1);
-        {
-            try {
-                InputStream in = new BufferedInputStream(conection.getInputStream());
-                BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-                while ((linea = reader.readLine()) != null)
-                    resul.append(linea);
-            }
-            catch (Exception ex){
-                String s = ex.getMessage();
-            }
-        }
-        //Else de mensaje de error por falta de red
-        return ObtenerListaDeSolicitudes(resul.toString());
-
-    }
-    public ArrayList<String> ObtenerListaDeSolicitudes(String response)
-    {
-        ArrayList<String> lista= new ArrayList<>();
-        try{
-            JSONArray json=new JSONArray(response);
-            for(int i=0; i<json.length();i++){
-                //Ya que se agregue el campo titulo a la tabla de solicitudes, se podra hacer uso de esta funcion
-                //lista.add(json.getJSONObject(i).getString("titulo"));
-            }
-        }
-        catch (Exception ex)
-        {
-            String exx=ex.getMessage();
-        }
-
-
-        return  lista;
-    }
 
     public int ConexionCorrecta(String url){
         try {
@@ -90,6 +52,9 @@ public class Conexion {
         }
 
     }
+
+
+
     public int IniciarSesion(String usr, String pass){
         String data = "";
         BufferedReader reader=null;
@@ -99,11 +64,11 @@ public class Conexion {
 
         try {
             //Indica url del webservice
-            urlprevia=webService+"iniciarsesion.php";
+            urlprevia=webService+"/valida.php";
             direccion = new URL(urlprevia);
             //Datos a enviar en POST
-            data = URLEncoder.encode("usuario", "UTF-8")+ "=" + URLEncoder.encode(usr, "UTF-8");
-            data += "&" + URLEncoder.encode("contrasena", "UTF-8") + "="+ URLEncoder.encode(pass, "UTF-8");
+            data = URLEncoder.encode("usu", "UTF-8")+ "=" + URLEncoder.encode(usr, "UTF-8");
+            data += "&" + URLEncoder.encode("pas", "UTF-8") + "="+ URLEncoder.encode(pass, "UTF-8");
             data += "&" + URLEncoder.encode("pass", "UTF-8")+ "=" + URLEncoder.encode(contrasenaWS, "UTF-8");
             //Abrir conexion y envio de datos via POST
             conn= direccion.openConnection();
@@ -141,7 +106,7 @@ public class Conexion {
                 preferences.edit().putString("headercorreo",json.getJSONObject(0).getString("correo")).commit();
 
                 preferences.edit().putString("idUsuario",json.getJSONObject(0).getString("idUsuario")).commit();
-                preferences.edit().putString("idRol",json.getJSONObject(0).getString("idRol")).commit();
+
                 preferences.edit().putString("correo",json.getJSONObject(0).getString("correo")).commit();
                 preferences.edit().putString("contrasena",json.getJSONObject(0).getString("contrasena")).commit();
                 preferences.edit().putString("nombre",json.getJSONObject(0).getString("nombre")).commit();
