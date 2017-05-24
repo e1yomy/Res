@@ -1,0 +1,6 @@
+	
+RewriteEngine On
+RewriteBase /enocuo/sistema/ws/app/datos/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ %{ENV:BASE}datos.php [QSA,L]

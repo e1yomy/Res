@@ -1,0 +1,6 @@
+	
+RewriteEngine On
+RewriteBase /enocuo/sistema/ws/app/usuarios/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ %{ENV:BASE}usuarios.php [QSA,L]
