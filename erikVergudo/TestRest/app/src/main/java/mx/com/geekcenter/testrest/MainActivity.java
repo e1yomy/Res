@@ -513,6 +513,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             postDataParams.put("token", "12345678");
             postDataParams.put("funcion", "misSolicitudes");
+
             postDataParams.put("tabla", "solAcceso");
             postDataParams.put("idTabla", "idAcceso");
             postDataParams.put("idUsuario", "1");
@@ -524,18 +525,18 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void ListarSolicitudSujetos(){
-        try {
-            postDataParams.put("token", "12345678");
-            postDataParams.put("funcion", "listarSolicitudSujetos");
-            postDataParams.put("tabla", "solAcceso");
-            postDataParams.put("idSuj", "1");
-            Log.e("params",postDataParams.toString());
+    try {
+        postDataParams.put("token", "12345678");
+        postDataParams.put("funcion", "listarSolicitudSujetos");
+        postDataParams.put("tabla", "solAcceso");
+        postDataParams.put("idSuj", "1");
+        Log.e("params",postDataParams.toString());
 
-        }
-        catch (Exception ex)
-        {
-            Toast.makeText(c, ex.getMessage(), Toast.LENGTH_SHORT).show();
-        }
+    }
+    catch (Exception ex)
+    {
+        Toast.makeText(c, ex.getMessage(), Toast.LENGTH_SHORT).show();
+    }
     }
     public void Acceso(){
         try {
