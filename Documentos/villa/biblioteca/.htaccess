@@ -1,0 +1,10 @@
+Options +FollowSymLinks -MultiViews
+
+RewriteEngine On
+
+RewriteRule ^([^/]+)/([^/]+) obras.php?peticion=$1&detalle=$2 [L,QSA]
+
+<FilesMatch "^\.(ht)|\.(ini|phps|log|sh|bak|1|old|swp)$|(\.*~)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
