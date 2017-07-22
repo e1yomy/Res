@@ -1,0 +1,33 @@
+body{
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 25px;
+    //background-color: #f0f0f0
+}
+div,ul,li,a,span{
+	//border:solid 1px red;
+}
+.logo{
+    //max-height: 150px;
+}
+menu{
+    //border: solid 1px red;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.anterior{
+    border-color:red;
+    border-width: 2px;
+}
+.siguiente{
+    border-color: blue;
+    border-width: 2px;
+    border-style:dotted:
+}
+.enviar{
+    border-color:limegreen;
+    border-width: 2px;
+}
+.icon-bar{
+    border: solid 2px black;
+}
