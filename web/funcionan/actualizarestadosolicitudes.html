@@ -1,0 +1,248 @@
+<!doctype html>
+<html ng-app="app">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <head>
+   <title>Acceso a la información</title>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <script src="js/app.js"></script>
+    
+    <script src="js/jquery-3.2.0.js"></script>
+  </head>
+<body>
+    <div id="loader" class="ocultardetalles"></div>
+
+    <div class="row">
+    <div class="logo col-sm-3 ">
+        <div class="col-sm-12 well">
+            <img class="img-responsive container" src="logo.png" alt="Instituto de Transparencia y Acceso a la Información Pública del Estado de B.C.S">
+        </div>
+        <menu></menu>
+        
+    
+    </div>
+    <div class="col-sm-9"  id="cuadro">
+            <div class="well">
+                <h4 class="titulo">Instituto de Transparencia y Acceso a la Información Pública del Estado de B.C.S.</h4>
+                <h6>Solicitud de acceso a la información</h6>                
+            </div>
+            <div class="row" >
+            <div id="loading" class="loading mostrardetalles"></div>
+                <div class="solicitudes col-sm-12">
+                <h1>Nombre del sujeto obligado</h1>
+                    <div id="cuadrolista" class="col-sm-6 well">
+                        <h4>Listado de solicitudes</h4>
+                        <div id="listado" class="container-fluid">
+                            <table id="lista" class='lista table-striped table-hover table-condensed table'>
+                                
+                            </table>
+                        </div>
+                    </div>
+                    <div id ="cuadrodetalles">
+                        <h4>detalles de solicitud</h4>
+                        <div id="soldetalles">
+                            <table id="detalles" class="table table-responsive">
+                                
+                            </table>
+                            <form id="formaderespuesta">
+                            	
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="">
+    <piedepagina></piedepagina>
+    </div>
+
+</body>
+</html>
+<script type="text/javascript">
+var sujetosobligados;
+var i;
+
+    $(document).ready(function(){
+    ////////////////        
+    document.getElementById('loader').className="ocultardetalles";
+    document.getElementById('cuadrodetalles').className="ocultardetalles";
+    ListaSolicitudes();        
+
+    function ListaSolicitudes()
+    {
+        var obj = { "token":12345678 ,"funcion":"listarTodasSolicitudes","idSujeto":4};
+        
+        document.getElementById('cuadrolista').className="col-sm-12 well";
+        document.getElementById('loader').className="mostrardetalles";
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            try{
+                var resultado = JSON.parse(this.responseText);
+                sujetosobligados = JSON.parse(this.responseText);
+
+                var tabla=document.getElementById('lista');
+               
+
+                for (var i = 0; i < resultado.length; i++) {
+                var row= tabla.insertRow(i);
+                row.id=resultado[i].idAcceso;
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                cell1.innerHTML = resultado[i].idAcceso;
+                cell2.innerHTML = resultado[i].nombreSujeto;
+                cell3.innerHTML = FormatoFecha(resultado[i].fecha);
+                row.onclick = (function(){MostrarDatosSolicitud($(this).attr('id'));});
+                }
+                 var header=tabla.createTHead();
+                var row= header.insertRow(0);
+                var cell1 = row.insertCell(0)
+                var cell2 = row.insertCell(1)
+                var cell3 = row.insertCell(2)
+                cell1.innerHTML = "<th>Folio</th>";
+                cell2.innerHTML = "<th>Sujeto Obligado</th>";
+                cell3.innerHTML = "<th>Fecha</th>";
+
+                document.getElementById('loader').className="ocultardetalles";
+            }
+            catch(ex)
+            {
+                alert(ex);
+                
+            }
+        }
+        if(this.readyState>4 && this.status==500)
+        {
+            alert("asd");
+        }
+    };
+    xhttp.open("POST", "//pruebastec.890m.com/finales/datos.php", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send(JSON.stringify(obj));
+    }
+    function FormatoFecha($fecha)
+    {
+        var resultado="";
+        
+        resultado+=$fecha.split(" ")[0].split("-")[2]+"-";
+        resultado+=$fecha.split(" ")[0].split("-")[1]+"-";
+        resultado+=$fecha.split(" ")[0].split("-")[0]+"";
+        resultado+=" ";
+        resultado+=$fecha.split(" ")[1];
+        return resultado;
+    }
+    function MostrarDatosSolicitud(id)
+    {
+    	i=id;
+        var obj = { "token":12345678 ,"funcion":"datosSolicitud","tabla":"solAcceso","idTabla":"idAcceso","id":id};
+        document.getElementById('loader').className="mostrardetalles";
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            try{
+                var resultado = JSON.parse(this.responseText);
+                //alert(JSON.stringify(resultado));
+                var tabladetalles=document.getElementById('detalles');
+                tabladetalles.innerHTML="";
+                
+                var texto=["Identificador","Folio","Fecha","Ciudadano","Notificaciones","Identificador de SO","Sujeto Obligado","Descripción","Tipo de entrega","Estado"];
+
+                var index=0;
+                for (var i in resultado) {
+                    var row= tabladetalles.insertRow(index);
+                    var cell1 = row.insertCell(0);
+                    var cell2 = row.insertCell(1);
+                    cell1.innerHTML = texto[index++];
+                    if(index==3)
+                        cell2.innerHTML = FormatoFecha(resultado[i]);
+                    else
+                        cell2.innerHTML = resultado[i];
+                }
+                document.getElementById('cuadrodetalles').className="mostrardetalles col-sm-6 well";
+                document.getElementById('cuadrolista').className="col-sm-6 well";
+                document.getElementById('loader').className="ocultardetalles";
+				var formaderespuesta=document.getElementById('formaderespuesta');
+                formaderespuesta.innerHTML="";
+                formaderespuesta.innerHTML=formaderespuesta.innerHTML+"<div class='form-group'>";
+                formaderespuesta.innerHTML=formaderespuesta.innerHTML+"<label for='response'>Respuesta:</label><textarea class='form-control' rows='5' id='respuesta'></textarea>";
+                formaderespuesta.innerHTML=formaderespuesta.innerHTML+"<br><label>Seleccionar PDF</label><input type='file' id='pdf'>";
+                formaderespuesta.innerHTML=formaderespuesta.innerHTML+"<br><label>Seleccionar imagen</label><input type='file' id='imagen'>";
+                formaderespuesta.innerHTML=formaderespuesta.innerHTML+"<br><label for='sel1'>Estado de la solicitud:</label><select class='form-control' id='estado'>"+
+                 "<option>1</option>"
+                +"<option>2</option>"
+                +"<option>3</option>"
+                +"<option>4</option>"
+                +"</select>";
+                formaderespuesta.innerHTML=formaderespuesta.innerHTML+"<br><button id ='enviarrespuesta' type='submit' class='btn'>Enviar respuesta</button>";
+                formaderespuesta.innerHTML=formaderespuesta.innerHTML+"</div>";
+				///////////
+
+
+
+
+                document.getElementById('enviarrespuesta').onclick=function(){Responder(document.getElementById('respuesta').value,document.getElementById('imagen').value,document.getElementById('pdf').value,document.getElementById('estado').selectedIndex)};
+                
+
+            }
+            catch(ex)
+            {
+                alert(ex);
+                
+            }
+        }
+        //document.getElementById('loader').className="ocultardetalles";
+    };
+    xhttp.open("POST", "//pruebastec.890m.com/finales/datos.php", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send(JSON.stringify(obj));
+    }
+	function Responder(descripcion,imagen,pdf,estado)
+    {
+        var obj = { "token":12345678 ,"funcion":"respuestaSolicitud","tabla":"solAcceso", "idAcceso":i,"descripcion":descripcion,"urlImagen":imagen,"urlPDF":pdf,"estado":estado};
+        alert(JSON.stringify(obj));
+        document.getElementById('loader').className="mostrardetalles";
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            try{
+                var resultado = JSON.parse(this.responseText);
+                alert(JSON.stringify(resultado));
+                
+                MostrarDatosSolicitud(i);
+				document.getElementById('loader').className="ocultardetalles";
+            }
+            catch(ex)
+            {
+                alert(ex);
+                document.getElementById('loader').className="ocultardetalles";
+            }
+        }
+        
+    };
+    xhttp.open("POST", "//pruebastec.890m.com/finales/datos.php", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send(JSON.stringify(obj));
+    }
+
+
+    ////////////////
+    });
+
+</script>
+
+    

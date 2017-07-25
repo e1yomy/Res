@@ -1,0 +1,129 @@
+
+<?php
+session_start();
+if (isset($_SESSION["user"])) {
+  header("location:index.php");
+
+}
+
+
+?>
+
+<!doctype html>
+<html ng-app>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <head>
+   <title>Inicio de sesion</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+
+    <script src="js/jquery-1.12.3.min.js" charset="utf-8"></script>
+    <script src="bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <script src="js/app.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery-3.2.0.js"></script>
+  </head>
+      <body>   
+        <form method="post" id="formlg">
+            <div class="col-sm-12 well">
+                  <img class="img-responsive container-fluid logo" src="logo.png" alt="Instituto de Transparencia y Acceso a la Información Pública del Estado de B.C.S">
+              </div>
+            <div class="campos col-sm-4"></div>
+               <div class="campos col-sm-4">
+                  <label>Usuario</label>
+                  <input type="email"  id="user" name="user" class="form-control" placeholder="Correo electrónico" required ng-model="correo">
+                  <br>
+                  <label>Contraseña</label>
+                  <input type="password"  id="pass" name="pass" class="form-control" placeholder="Escribir contraseña" required ng-model="pass">
+                  <br>
+                  <input type="submit"  id="login" name="login" class="btn btn-success col-xs-12" value="Iniciar sesión" onclick="acceder()">
+                  <br>
+                </div>
+               <div class="campos col-sm-4"></div>
+
+         </form>
+
+         <br>
+         <br><br><br><br><br>
+      </body>
+</html>
+
+
+
+<script type="text/javascript">
+
+//$(document).ready(function()
+function acceder(){
+    var user = $('#user').val().replace("'","");
+    var pass = $('#pass').val().replace("'","");
+
+    if(user=="" || pass=="")
+      return;
+    var obj = { "token":12345678 ,"funcion":"acceso", "tabla":"ciudadano","usuario":user,"contrasena":pass};
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      try{
+        var resultado = JSON.parse(this.responseText);
+        MostrarDatosUsuario(resultado);
+      }
+      catch(ex)
+      {
+        alert(ex+"resultado");
+      }
+    }
+}; 
+    xhttp.open("POST", "//pruebastec.890m.com/finales/datos.php", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send(JSON.stringify(obj));
+}
+function MostrarDatosUsuario(datos)
+{
+  if(datos=="Usuario o contrasena incorrectos")
+  {
+    alert(datos); 
+    $('#user').focus();
+
+  }
+  else if(datos=="Fallo en la conexion con la base de datos")
+  {
+    alert(datos); 
+  }
+  else
+  {
+    try{
+    	/*
+			// Definimos la URL que vamos a solicitar via Ajax
+			var ajax_url = "http://pruebastec.890m.com/web/actualizarestadosolicitudes.html";
+			var ajax_request = new XMLHttpRequest();
+			ajax_request.open( "POST", ajax_url, true );
+			// Establecer la cabecera Content-Type apropiada
+			ajax_request.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+			// Enviar la solicitud
+			ajax_request.send(JSON.stringify(datos));
+		*/
+
+      window.location.href="http://pruebastec.890m.com/web/funcionan/actualizarestadosolicitudes.html?data="+JSON.stringify(datos);
+    }
+    catch(ex)
+    {
+      alert(ex+"funcion ex");
+    }
+    alert(JSON.stringify(datos)+"funcion");
+  }
+  
+}
+
+$(document).ready(function() {
+
+
+  });
+</script>
